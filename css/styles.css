@@ -7,8 +7,12 @@
 }
 
 :root {
-
+  --color-primary: #006400;       /* Deep Forest Green */
+  --color-secondary: #777777;     /* Mountain Gray */
+  --color-accent: #964B00;        /* Earthy Brown */
+  --color-highlight: #FF7F00;     /* Adventure Orange */
 }
+
 
 html {
 
@@ -16,4 +20,184 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background-color: var(--color-primary);
+  padding: 20px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  color:white;
+  width: 4rem;
+}
+
+.navbar-logo img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 100;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu li {
+  /* Style your menu items as needed */
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url("../sem-proj1-resit_assets/images/tim-tiedemann-149766-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container {
+  text-align: center;
+  color: white;
+}
+
+.hero-container {
+  border-radius: .8rem;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.hero-text {
+  font-size: 18px;
+  font-weight: 400;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.footer {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+
+.footer-links {
+  /* Adjust styles for footer links */
+}
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-menu li {
+  /* Style your menu items as needed */
+}
+
+.footer-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin: 0;
+}
+
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-wrap: wrap;
+  }
+
+  .navbar-menu {
+    margin-top: 20px;
+  }
+
+  .navbar-menu li {
+    flex: 1 0 100%;
+    text-align: center;
+  }
+
+  .navbar-logo img {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .hero-button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .footer-container {
+    justify-content: center;
+  }
 }
