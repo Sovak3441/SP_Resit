@@ -11,12 +11,22 @@
   --color-secondary: #777777;     /* Mountain Gray */
   --color-accent: #964B00;        /* Earthy Brown */
   --color-highlight: #FF7F00;     /* Adventure Orange */
+  --color-opaqe: rgba(0, 0, 0, 0.3); /* black transparent */
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  letter-spacing: .1rem;
+  word-spacing: .2rem;
 }
 
+h1 {
+  font-weight: 900;
+}
+
+h2, h3, h4 {
+  font-weight: 700;
+}
 .navbar {
   background-color: var(--color-primary);
   padding: 20px;
@@ -70,7 +80,7 @@ body {
 .hero {
   background-image: url("../sem-proj1-resit_assets/images/tim-tiedemann-149766-unsplash.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -79,9 +89,10 @@ body {
 
 .hero-container {
   text-align: center;
+  padding: 1rem;
   color: white;
   border-radius: .8rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--color-opaqe);
 }
 
 .hero-title {
@@ -118,23 +129,117 @@ body {
 .testimonials {
   background-image: url("../sem-proj1-resit_assets/images/brannon-naito-346275-unsplash.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  min-height: 400px;
+  min-height: 600px;
+}
+
+.section-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  padding: .5rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: .5rem;
+  margin-bottom: 2.5rem;
 }
 
 .testimonial-card {
+  display: flex;
+  margin-inline: 1rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 360px;
+  max-width: 480px;
+  color: white;
+  border-radius: .3rem;
+  background-color: var(--color-opaqe);
+}
+
+.testimonial-card-header {
+  display: flex;
+  padding: .7rem;
+}
+
+.testimonial-card-content {
 
 }
 
-
-.recomandations {
-  background-image: url("../sem-proj1-resit_assets/images/brannon-naito-346275-unsplash.jpg");
+.about {
+  padding-top: 15vh;
+  height: 100vh;
+  background: url("../sem-proj1-resit_assets/images/anton-lecock-690943-unsplash.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  min-height: 400px;
+
+}
+
+.about-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 150px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  color: white;
+}
+
+.about-image-container > img {
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.about-image-container > h2 {
+  z-index: 10;
+}
+
+.about-textblock {
+  width: 75%;
+  color: white;
+  background-color: var(--color-opaqe);
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+.about-textblock > p {
+  padding: .5rem;
+}
+
+.recommendations {
+  background: url("../sem-proj1-resit_assets/images/mahir-uysal-604828-unsplash.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 600px;
 }
 
 .footer {
@@ -218,9 +323,38 @@ body {
     margin-bottom: 20px;
   }
 
+  .hero-text {
+    width: 90%;
+  }
+
   .hero-button {
     font-size: 16px;
     padding: 8px 16px;
+  }
+
+  .section-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .first {
+    padding-top: 7vh;
+  }
+
+  .about-image-left, .about-textblock-right {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
   .footer-container {
