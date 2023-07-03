@@ -13,11 +13,6 @@
   --color-highlight: #FF7F00;     /* Adventure Orange */
 }
 
-
-html {
-
-}
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -118,6 +113,28 @@ body {
   text-decoration: none;
   font-size: 18px;
   border-radius: 5px;
+}
+
+.testimonials {
+  background-image: url("../sem-proj1-resit_assets/images/brannon-naito-346275-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-height: 400px;
+}
+
+.testimonial-card {
+
+}
+
+
+.recomandations {
+  background-image: url("../sem-proj1-resit_assets/images/brannon-naito-346275-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
 }
 
 .footer {
