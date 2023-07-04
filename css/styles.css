@@ -182,11 +182,15 @@ h2, h3, h4 {
 
 }
 
-.about {
-  padding-top: 15vh;
+.about-body {
   height: 100vh;
   background: url("../sem-proj1-resit_assets/images/anton-lecock-690943-unsplash.jpg") no-repeat center center fixed;
   background-size: cover;
+}
+
+.about {
+  padding-top: 15vh;
+
 
 }
 
