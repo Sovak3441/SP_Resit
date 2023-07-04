@@ -11,7 +11,7 @@
   --color-secondary: #777777;     /* Mountain Gray */
   --color-accent: #964B00;        /* Earthy Brown */
   --color-highlight: #FF7F00;     /* Adventure Orange */
-  --color-opaqe: rgba(0, 0, 0, 0.3); /* black transparent */
+  --color-opaqe: rgba(0, 0, 0, 0.5); /* black transparent */
 }
 
 body {
@@ -236,8 +236,12 @@ h2, h3, h4 {
   padding: .5rem;
 }
 
+.text-italic {
+  font-style: italic;
+  font-weight: 300;
+}
 .recommendations {
-  background: url("../sem-proj1-resit_assets/images/mahir-uysal-604828-unsplash.jpg") no-repeat center center;
+  background: url("../img/joshua-earle-682748-unsplash.jpg") no-repeat center center;
   background-size: cover;
   min-height: 600px;
 }
@@ -256,19 +260,10 @@ h2, h3, h4 {
   padding-left: 2rem;
 }
 
-
-.footer-links {
-  /* Adjust styles for footer links */
-}
-
 .footer-menu {
   list-style: none;
   display: flex;
   gap: 20px;
-}
-
-.footer-menu li {
-  /* Style your menu items as needed */
 }
 
 .footer-menu li a {
@@ -286,9 +281,6 @@ h2, h3, h4 {
   margin: 0;
 }
 
-
-
-/* Responsive Styles */
 
 @media (max-width: 768px) {
   .navbar-container {
