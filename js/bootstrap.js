@@ -1,4 +1,6 @@
-window.addEventListener('scroll', function() {
-    var navbar = document.querySelector('.navbar');
-    navbar.classList.toggle('sticky', window.scrollY > 0);
+const menuIcon = document.querySelector(".mobile-menu-icon");
+const navbarMenu = document.querySelector('.navbar-menu');
+
+menuIcon.addEventListener('click', () => {
+
 });
