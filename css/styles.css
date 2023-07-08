@@ -59,7 +59,7 @@ main {
 }
 
 .navbar-logo {
-  color:white;
+  color: white;
   width: 4rem;
 }
 
@@ -80,6 +80,7 @@ main {
   list-style: none;
   gap: 20px;
 }
+
 
 .navbar-menu li {
   /* Style your menu items as needed */
@@ -154,6 +155,7 @@ main {
   border: none;
   border-radius: 1rem;
 }
+
 .hero-button:hover {
   background-color: var(--color-highlight);
   transform: translateY(-.2rem);
@@ -335,6 +337,83 @@ main {
   min-height: 600px;
 }
 
+.packages {
+
+}
+
+.package-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.package-card {
+  background-color: var(--color-opaqe);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 20rem;
+  padding: 1rem;
+  gap: 1rem;
+  border: 1px solid red;
+}
+
+.package-card-img {
+  width: 100%;
+  scale: 1;
+  border-radius: 2rem;
+}
+
+.package-card-header {
+  border: 1px solid var(--color-highlight);
+  padding: .2rem;
+  border-radius: .5rem;
+}
+
+.package-card-body {
+
+}
+
+.package-card-footer {
+ display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+}
+
+.package-card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.package-card-button {
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 15px var(--color-accent-shadow);
+  color: white;
+  font-weight: 700;
+  padding: .4rem;
+  font-size: 1rem;
+  text-decoration: none;
+  margin: 4px 2px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.package-card-button:hover {
+  background-color: var(--color-highlight);
+  transform: translateY(-.2rem);
+  box-shadow: 0px 15px 20px var(--color-highlight-shadow);
+}
+
 .form-wrapper {
   width: 480px;
   background-color: var(--color-opaqe);
@@ -373,6 +452,7 @@ main {
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
+
 .submit-button:hover {
   background-color: var(--color-highlight);
   transform: translateY(-.2rem);
@@ -476,6 +556,10 @@ main {
 
   .about-image-container {
     margin-bottom: 1rem;
+  }
+
+  .package-card {
+    width: 100%;
   }
 
   .footer-container {
