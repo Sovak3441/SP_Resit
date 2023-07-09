@@ -376,21 +376,23 @@ main {
   border-radius: .5rem;
 }
 
-.package-card-body {
-
-}
-
 .package-card-footer {
- display: flex;
+  display: flex;
   flex-direction: column;
   gap: .5rem;
-  align-items: center;
+  justify-content: center;
 }
 
 .package-card-info {
+  font-size: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hike-type {
+  width: 50%;
 }
 
 .package-card-button {
